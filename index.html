@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lyric Music</title>
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h1>Lyric Music</h1>
+      </header>
+      <main>
+        <div id="playlist">
+          <h2>Biblioteca</h2>
+          <ul id="song-list">
+            <!-- Las canciones se cargarán aquí -->
+          </ul>
+        </div>
+      </main>
+      <footer>
+        <div id="player">
+          <div class="song-info">
+            <img id="album-art" src="" alt="Carátula del Álbum">
+            <div>
+              <h3 id="song-title">Selecciona una canción</h3>
+              <p id="song-artist"></p>
+            </div>
+          </div>
+          <div class="controls">
+            <button id="prev-btn">Anterior</button>
+            <button id="play-btn">Play</button>
+            <button id="next-btn">Siguiente</button>
+          </div>
+          <div class="progress-container">
+            <input type="range" id="progress-bar" value="0" step="1">
+          </div>
+          <audio id="audio-source" src=""></audio>
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
